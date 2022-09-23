@@ -39,5 +39,5 @@
 * Enter cook time. 
 * Keep it simple to start.
 
-![Recime_Outline](https://github.comcollinblank/recime-frontend/blog/Recime_Outline.png)
-![Database_toStart](https://github.comcollinblank/recime-frontend/blog/Database_tostart.png)
+![Recime_Outline](./blob/Recime_Outline.png)
+![Database_toStart](./blob/Database_tostart.png)
