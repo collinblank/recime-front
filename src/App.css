@@ -5,6 +5,7 @@
   --gold: #fbbd0d;
   --black: #000000;
   --background: #FAF5E6;
+  --font: 'Josefin Sans', sans-serif;
 }
 
 /*Header "recime */
@@ -74,3 +75,21 @@ a {
   background-color: #fff;
 }
 
+.cards{
+  width: 24em;
+  height: 9.5em;
+  margin-top: .5em;
+  margin-left: .75em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card{
+  background-color: var(--red);
+  box-shadow: 5px 5px 5px var(--black);
+  font-family: var(--font);
+}
+
+.card:nth-child(odd){
+  margin-right: 1em;
+}
