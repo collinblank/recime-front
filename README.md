@@ -47,5 +47,5 @@ FBBD0D - Gold
 images on 25% opacity
 FAF5E6 - background
 
-![Recime_Outline](./blob/Recime_Outline.png)
-![Database_toStart](./blob/Database_tostart.png)
+![Recime_Outline](./frontend/blob/Recime_Outline.png)
+![Database_toStart](./frontend/blob/Database_tostart.png)
