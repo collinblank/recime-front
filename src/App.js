@@ -1,7 +1,7 @@
 import { Route } from "react-router-dom"
 
 import Header from "./components/Header"
-import Body from "./components/Cards"
+import CardsIndex from "./components/Cards"
 import "./App.css";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Header className="nav_and_head"/>
     </div>
     <div className="body">
-      <Body />
+      <CardsIndex />
     </div>
   </div>
   );

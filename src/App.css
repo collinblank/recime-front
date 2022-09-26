@@ -60,6 +60,14 @@ a {
   font-weight: bold;
 }
 
+a:hover {
+  color: var(--gold);
+}
+
+a:active {
+  color: var(--gold);
+}
+
 .menuNav li:first-child {
   margin-top: 7rem;
 }
