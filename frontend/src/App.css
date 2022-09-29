@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 :root {
   --red: #fd1f4a;
@@ -9,14 +9,14 @@
 }
 
 /*Header "recime */
-.header{
+/* .header{
   display: flex;
   padding-top: 1.25em;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 /* sidebar Nav */
-.navBar {
+/* .navBar {
   display: flex;
 }
 
@@ -62,9 +62,9 @@ a {
 
 a:hover {
   color: var(--gold);
-}
+} */
 
-a:active {
+/* a:active {
   color: var(--gold);
 }
 
@@ -81,23 +81,23 @@ a:active {
 
 .whitebackground{
   background-color: #fff;
-}
+} */
 
-.cards{
+/* .cards{
   width: 24em;
   height: 9.5em;
   margin-top: .5em;
   margin-left: .75em;
   display: flex;
   justify-content: space-between;
-}
+} */
 
-.card{
+/* .card{
   background-color: var(--red);
   box-shadow: 5px 5px 5px var(--black);
   font-family: var(--font);
-}
+} */
 
-.card:nth-child(odd){
+/* .card:nth-child(odd){
   margin-right: 1em;
-}
+} */ 
