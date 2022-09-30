@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 :root {
   --red: #fd1f4a;
@@ -8,13 +8,12 @@
   --font: 'Josefin Sans', sans-serif;
 }
 
-/*Header "recime */
-/* .header{
-  display: flex;
-  padding-top: 1.25em;
-  font-family: 'Josefin Sans', sans-serif;
+.top-bar{
+  border: 1px solid purple;
+  
 }
 
+/*
 /* sidebar Nav */
 /* .navBar {
   display: flex;

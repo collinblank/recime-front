@@ -5,6 +5,9 @@ import { GlobalStyles } from './global';
 import { theme } from './theme';
 import Burger from './components/Burger';
 import Menu from './components/Menu';
+import Header from './components/Header/Header';
+
+import './App.css'
 
 
 function App() {
@@ -16,14 +19,13 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <>
+    <div>
       <GlobalStyles />
-      <div>
-        <h1>Hello. This is burger menu tutorial</h1>
-      </div>
-      <div ref={node}>
+        <div ref={node}>
           <Burger open={open} setOpen={setOpen} />
           <Menu open={open} setOpen={setOpen} />
         </div>
+    </div>
     </>
   </ThemeProvider>
 );
