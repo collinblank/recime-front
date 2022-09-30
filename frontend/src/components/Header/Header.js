@@ -1,13 +1,30 @@
-import React from "react";
-
+import React, { useState, useRef } from 'react'
+import { useOnClickOutside } from '../../hooks'
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from '../../global';
+import { theme } from '../../theme';
+import Burger from '../Burger';
+import Menu from '../Menu'
 import './Header.css'
 
 function Header() {
-  
-  
+
+  const [open, setOpen] = useState(false);
+  const node = useRef(); 
+  useOnClickOutside(node, () => setOpen(false));
+
     return (
-      <div className ="row header_nav">
-        <div className="col-8 header"><h1>Recime</h1></div>
+      <div>
+      <ThemeProvider theme={theme}>
+       <>
+        <GlobalStyles />
+        <div ref={node} className='top-bar'>
+          <h1 className='recime'>Recime</h1>
+          <Burger open={open} setOpen={setOpen} />
+          <Menu open={open} setOpen={setOpen} />
+        </div>
+      </>
+      </ThemeProvider>
       </div>
     );
   }

@@ -5,18 +5,13 @@ import Header from '../Header/Header';
 
 const Burger = ({ open, setOpen }) => {
   return (
-    <div className="top-bar">
-      <Header />
+   
     <StyledBurger open={open} onClick={() => setOpen(!open)}>
-      
       <div />
       <div />
-      <div />
-
-      
+      <div />      
     </StyledBurger>
-    </div>
-    
+  
   )
 }
 Burger.propTypes = {

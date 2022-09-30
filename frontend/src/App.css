@@ -8,9 +8,8 @@
   --font: 'Josefin Sans', sans-serif;
 }
 
-.top-bar{
-  border: 1px solid purple;
-  
+Header{
+  background-color: #fff;
 }
 
 /*
