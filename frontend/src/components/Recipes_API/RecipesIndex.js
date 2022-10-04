@@ -1,27 +1,36 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-// import RecipeCard from "../Details/RecipeCard";
-
-
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../../theme';
+import RecipeCard from "../Details/RecipeCard";
 
 export default function RecipesIndex() {
 
-const RECIPES_URL = "http://localhost:4000/recipes";
+const RECIPES_URL = "https://recime-backend.herokuapp.com/recipes";
 
-const [recipes, getRecipes] = useState('');
+const [recipes, getRecipes] = useState({});
 
 useEffect(() => {
         getAllRecipes();
     }, []);
 
 const getAllRecipes = () => {
-axios.get(`${RECIPES_URL}`)
-  .then((response) => response.json())
-  .then((data) => getRecipes(data))
-  .catch(error => console.error(`Error: $(error)`));
+axios.get('https://recime-backend.herokuapp.com/recipes')
+.then((response) =>{
+  const allRecipes = response.data;
+  getRecipes(allRecipes)
+})
 }
+
+// let recipesFormatted = recipes.map((recipe) => {
   return(
-    console.log({recipes})
+    <div>
+      <h2>{recipes.name}</h2>
+    </div>
+ 
   )
 }
+// )
+
+// }
 

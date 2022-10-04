@@ -11,7 +11,6 @@ const Burger = ({ open, setOpen }) => {
       <div />
       <div />      
     </StyledBurger>
-  
   )
 }
 Burger.propTypes = {

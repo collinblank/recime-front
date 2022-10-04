@@ -1,23 +1,37 @@
 import React, { useState, useRef } from 'react';
-import Header from './components/Header/Header';
-// import RecipeCard from './components/Details/RecipeCard';
+import { useOnClickOutside } from '../src/hooks'
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from '../src/global';
+import { theme } from '../src/theme';
+import Burger from '../src/components/Burger';
+import Menu from '../src/components/Menu'
+// import Header from './components/Header/Header';
 import RecipesIndex from './components/Recipes_API/RecipesIndex';
-import './App.css'
 
+import './App.css'
 
 function App() {
 
+
+  const [open, setOpen] = useState(false);
+  const node = useRef(); 
+  useOnClickOutside(node, () => setOpen(false));
+
   return (
-<div>
-    <div className="top-bar">
-      <Header />
-      <RecipesIndex />
-    </div>
     <div>
+    <ThemeProvider theme={theme}>
+     <>
+      <GlobalStyles />
+      <div ref={node} className='top-bar'>
+        <h1 className='recime'>Recime</h1>
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen} />
+        <RecipesIndex />
+      </div>
+    </>
+    </ThemeProvider>
     </div>
-</div>
-  
-);
+  );
 }
 
 export default App;
