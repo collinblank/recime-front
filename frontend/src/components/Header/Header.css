@@ -10,9 +10,3 @@
 
 /* Header recime */
 
-.recime{
-    position: fixed;
-    top: 1.3em;
-    border-bottom: 2px solid var(--gold);
-    font-family: var(--font);
-}

@@ -1,0 +1,11 @@
+:root {
+    --red: #fd1f4a;
+    --gold: #fbbd0d;
+    --black: #000000;
+    --background: #FAF5E6;
+    --font: 'Josefin Sans', sans-serif;
+  }
+
+  .recipes{
+    margin-top: 8em;
+  }

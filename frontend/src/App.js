@@ -5,7 +5,6 @@ import { GlobalStyles } from '../src/global';
 import { theme } from '../src/theme';
 import Burger from '../src/components/Burger';
 import Menu from '../src/components/Menu'
-// import Header from './components/Header/Header';
 import RecipesIndex from './components/Recipes_API/RecipesIndex';
 
 import './App.css'
@@ -18,6 +17,7 @@ function App() {
   useOnClickOutside(node, () => setOpen(false));
 
   return (
+    <>
     <div>
     <ThemeProvider theme={theme}>
      <>
@@ -27,10 +27,13 @@ function App() {
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
       </div>
-      <RecipesIndex />
     </>
     </ThemeProvider>
     </div>
+    <div>
+      <RecipesIndex />
+    </div>
+    </>
   );
 }
 
