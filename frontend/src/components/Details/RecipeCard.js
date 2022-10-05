@@ -19,24 +19,30 @@ export default function RecipeCard(props) {
         if (recipes.length > 0) {
             return(
                 <div className="recipes">
-                <Grid container spacing={2}>
+                <Grid container
+                 spacing={4}
+                 direction="row"
+                 justify="space-between"
+                 alignItems="flex-start">
                 {
                 recipes.map((recipe, index) => (
-                        <Card key={recipe.recipeId}>
-                            <CardActionArea>
-                            <Grid spacing={2}>
+                    <Grid item xs={4}>
+                        <Card className='recipe-card' key={recipe.recipeId} style={{backgroundColor: "var(--red)"}}>
+                            <CardActionArea> 
                             <CardContent>
                                 <CardMedia
                                     component="img"
-                                    height="140"
                                     image="https://cdn-icons-png.flaticon.com/512/57/57990.png"
                                     alt="cartoon pot"
                                 />
+                                <Typography className="recipe-name">
                                     {recipe.name}
+                                </Typography>
                             </CardContent>
-                            </Grid>
+                            
                             </CardActionArea>
                         </Card>
+                    </Grid>
 
                 ))
                 }

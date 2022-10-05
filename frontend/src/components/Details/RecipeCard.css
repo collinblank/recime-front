@@ -9,3 +9,18 @@
   .recipes{
     margin-top: 8em;
   }
+
+  .recipe-name{
+    font-family: var(--font);
+    color: var(--black);
+    text-align: center;
+  }
+
+  .recipe-card{
+    filter: drop-shadow(10px 10px 4px var(--black));
+    transition: transform 1s;
+  }
+
+  .recipe-card:hover{
+    transform: scale(1.02);
+  }

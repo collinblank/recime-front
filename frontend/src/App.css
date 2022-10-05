@@ -10,7 +10,8 @@
 
 .recime{
   position: fixed;
-  top: 1em;
+  top: 1.5em;
+  left: 5em;
   border-bottom: 2px solid var(--gold);
   font-family: var(--font);
 }

@@ -17,5 +17,7 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: center;
     text-rendering: optimizeLegibility;
   }
-
+  .background-image{
+    background-image: url("https://static.thenounproject.com/png/35453-200.png");
+  }
   `
