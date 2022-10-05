@@ -21,16 +21,14 @@ axios.get('https://recime-backend.herokuapp.com/recipes')
   getRecipes(allRecipes)
 })
 }
-
+{/* console.log({recipes}) */}
+      {/* <RecipeCard /> */}
 // let recipesFormatted = recipes.map((recipe) => {
   return(
-    <div>
-      <h2>{recipes.name}</h2>
-    </div>
- 
+
+  <RecipeCard recipes={recipes}/>
+
   )
 }
-// )
 
-// }
 

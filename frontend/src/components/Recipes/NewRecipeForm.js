@@ -33,6 +33,14 @@ return (
         <form onSubmit={handleSubmit}>
             <div className="form-group">
                 <label htmlFor="name">Recipe Name</label>
+                <input
+                    required
+                    value={recipe.name}
+                    onChange={e => setRecipe({ ...recipe, name: e.target.value })}
+                    className="form-control"
+                    id="name"
+                    name="name"
+                />
             </div>
         </form>
     </main>

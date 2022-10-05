@@ -26,8 +26,8 @@ function App() {
         <h1 className='recime'>Recime</h1>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
-        <RecipesIndex />
       </div>
+      <RecipesIndex />
     </>
     </ThemeProvider>
     </div>
