@@ -1,10 +1,13 @@
 import * as React from 'react';
+import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import ViewRecipe from './ViewRecipe'
 import Icons from './Icons';
 import './RecipeCard.css'
 
@@ -12,6 +15,7 @@ import './RecipeCard.css'
 
 export default function RecipeCard(props) { 
 
+    const { recipeId } = useParams();
 
     const displayRecipes = (props) => {
         const {menu, recipes} = props;
@@ -20,14 +24,15 @@ export default function RecipeCard(props) {
             return(
                 <div className="recipes">
                 <Grid container
-                 spacing={4}
-                 direction="row"
-                 justify="space-between"
-                 alignItems="flex-start">
+                spacing={4}
+                direction="row"
+                justify="space-between"
+                alignItems="flex-start">
                 {
                 recipes.map((recipe, index) => (
                     <Grid item xs={4}>
                         <Card className='recipe-card' key={recipe.recipeId} style={{backgroundColor: "var(--red)"}}>
+                            <Link to={`/recipes/${recipe.recipeId}`}>
                             <CardActionArea> 
                             <CardContent>
                                 <CardMedia
@@ -36,14 +41,14 @@ export default function RecipeCard(props) {
                                     alt="cartoon pot"
                                 />
                                 <Typography className="recipe-name">
-                                    {recipe.name}
+                                  {recipe.name}
                                 </Typography>
                             </CardContent>
                             
                             </CardActionArea>
+                            </Link>
                         </Card>
                     </Grid>
-
                 ))
                 }
                 </Grid>

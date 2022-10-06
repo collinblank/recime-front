@@ -1,39 +1,21 @@
 import React, { useState, useRef } from 'react';
-import { useOnClickOutside } from '../src/hooks'
-import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from '../src/global';
-import { theme } from '../src/theme';
-import Burger from '../src/components/Burger';
-import Menu from '../src/components/Menu'
-import RecipesIndex from './components/Recipes_API/RecipesIndex';
-
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import ViewRecipe from './components/Details/ViewRecipe';
+import HomePage from './HomePage';
+import NewRecipeForm from './components/Details/NewRecipeForm';
 import './App.css'
 
 function App() {
 
-
-  const [open, setOpen] = useState(false);
-  const node = useRef(); 
-  useOnClickOutside(node, () => setOpen(false));
-
   return (
-    <>
-    <div>
-    <ThemeProvider theme={theme}>
-     <>
-      <GlobalStyles />
-      <div ref={node} className='top-bar'>
-        <h1 className='recime'>Recime</h1>
-        <Burger open={open} setOpen={setOpen} />
-        <Menu open={open} setOpen={setOpen} />
-      </div>
-    </>
-    </ThemeProvider>
-    </div>
-    <div>
-      <RecipesIndex />
-    </div>
-    </>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/' element={<HomePage/>}/>
+          <Route exact path='/recipes/:recipeId' element={<ViewRecipe />} />
+          <Route exact path='/recipes/new' element={<NewRecipeForm />} />
+        </Routes>
+      </BrowserRouter>
+ 
   );
 }
 
