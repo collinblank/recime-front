@@ -28,13 +28,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
-},
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -54,7 +50,7 @@
     ]
   },
   "engines": {
-    "node": "<=14.x.x",
-    "npm": "<=6.x.x"
+    "node": "v18.8.0",
+    "npm": "v8.19.2"
   }
 }
