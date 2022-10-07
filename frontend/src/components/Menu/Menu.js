@@ -7,15 +7,21 @@ const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
       <Link to={`/recipes/new`}>
-      <a href="/">
         <span role="img" aria-label="add recipe"></span>
         Add Recipe
-      </a>
       </Link>
       <a href="/">
         <span role="img" aria-label="home"></span>
         Home
         </a>
+      <Link to={`/sign-up`}>
+        <span role="img" aria-label="Sign Up"></span>
+        Sign Up
+      </Link>
+      <Link to={`/login`}>
+        <span role="img" aria-label="Login"></span>
+        Login
+      </Link>
     </StyledMenu>
   )
 }

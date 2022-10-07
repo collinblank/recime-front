@@ -45,3 +45,5 @@ return (
         </form>
     </main>
 )
+
+export default NewRecipesForm

@@ -21,6 +21,17 @@ function ViewRecipe() {
         window.localStorage.setItem('recipe', recipe);
     }, [recipe]);
 
+    function editRecipe() {
+		navigate(`/recipes/${recipe.recipeId}/edit`)
+	}
+
+    async function deleteRecipe() {
+        await fetch(`https://recime-backend.herokuapp.com/recipes/${recipeId}`,{
+            method: 'DELETE'
+    })
+    navigate('/')
+    };
+
 return (
     <>
     <main>
@@ -30,6 +41,14 @@ return (
         <h5 className='cookTime'>{recipe.cookTime}</h5>
         <p className='instructions'>{recipe.instructions}</p>
     </div>
+
+    <br />
+        <a className="btn btn-warning" onClick={editRecipe}>
+			Edit
+		</a>{` `}
+		<button type="submit" className="btn btn-danger" onClick={deleteRecipe}>
+				Delete
+		</button>
     </main>
     </>
 )
