@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { BsTrash } from 'react-icons/bs';
+import { AiOutlineEdit } from 'react-icons/ai'
+import OtherHeader from '../Header/OtherHeader';
 import './ViewRecipe.css';
 
 function ViewRecipe() {
@@ -34,22 +37,31 @@ function ViewRecipe() {
 
 return (
     <>
+    <OtherHeader/>
+    <div className='view-full-recipe'>
     <main>
     <div className='view-recipe'>
-        <h1>{recipe.name}</h1>
-        <p className="ingredient-list">{recipe.ingredientList}</p>
-        <h5 className='cookTime'>{recipe.cookTime}</h5>
-        <p className='instructions'>{recipe.instructions}</p>
+        <h1 className='recipe-name'>{recipe.name}</h1>
+        <span className='time-image'><span className='time-hours'><p className='cookTime'>{recipe.cookTime}</p> <span className='hours'>Hour(s)</span></span> <img className='cooking-image' src='https://cdn-icons-png.flaticon.com/512/57/57990.png'></img></span>
+        <div className='ingredients-block'><h2 className='ingredients-header'>Ingredients List</h2>
+        <p className="ingredient-list">{recipe.ingredientList}</p></div>
+        <div className='instructions-block'>
+            <h2 className='instructions-header'>Instructions</h2>
+            <p className='instructions'>{recipe.instructions}</p></div>
     </div>
 
     <br />
-        <a className="btn btn-warning" onClick={editRecipe}>
-			Edit
-		</a>{` `}
-		<button type="submit" className="btn btn-danger" onClick={deleteRecipe}>
-				Delete
+    <div className='buttons'>
+        <button className="edit" onClick={editRecipe}>
+			<AiOutlineEdit />
+	    </button>
+		<button type="submit" className="delete" onClick={deleteRecipe}>
+		    <BsTrash/>
 		</button>
+    </div>
+
     </main>
+    </div>
     </>
 )
 

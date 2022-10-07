@@ -40,7 +40,7 @@ export default function RecipeCard(props) {
                                     image="https://cdn-icons-png.flaticon.com/512/57/57990.png"
                                     alt="cartoon pot"
                                 />
-                                <Typography className="recipe-name">
+                                <Typography className="recipe-card-name">
                                   {recipe.name}
                                 </Typography>
                             </CardContent>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router"
 import { useNavigate } from 'react-router-dom' 
+import OtherHeader from "../Header/OtherHeader"
 
 function EditRecipeForm() {
 
@@ -40,6 +41,7 @@ function EditRecipeForm() {
 
 	return (
 		<main>
+            <OtherHeader/>
 			<h1>Edit Recipe</h1>
 			<form onSubmit={handleSubmit}>
             <div className="form-group">

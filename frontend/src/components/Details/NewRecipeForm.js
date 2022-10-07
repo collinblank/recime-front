@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from "react-router-dom"
+import OtherHeader from '../Header/OtherHeader';
 
 function NewRecipeForm() {
     const [recipe, setRecipe] = useState({})
@@ -23,6 +24,7 @@ function NewRecipeForm() {
 
 return(
     <main>
+        <OtherHeader />
         <h1>Add a New Recipe</h1>
         <form onSubmit={handleSubmit}>
             <div className="form-group">
