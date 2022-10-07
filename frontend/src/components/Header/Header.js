@@ -5,6 +5,7 @@ import { GlobalStyles } from '../../global'
 import { theme } from '../../theme'
 import Burger from '../Burger'
 import Menu from '../Menu'
+import './Header.css'
 
 function Header() {
 
@@ -19,7 +20,7 @@ function Header() {
       <>
       <GlobalStyles />
           <div ref={node} className='top-bar'>
-              <h1 className='recime'>Recime</h1>
+              <h1 className='header-recime'>Recime</h1>
               <Burger open={open} setOpen={setOpen} />
               <Menu open={open} setOpen={setOpen} />
           </div>

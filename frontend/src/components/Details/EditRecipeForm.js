@@ -2,6 +2,8 @@ import { useState, useEffect } from "react"
 import { useParams } from "react-router"
 import { useNavigate } from 'react-router-dom' 
 import OtherHeader from "../Header/OtherHeader"
+import { VscSaveAs } from 'react-icons/vsc'
+import './EditRecipeForm.css'
 
 function EditRecipeForm() {
 
@@ -40,11 +42,12 @@ function EditRecipeForm() {
 	}
 
 	return (
+        <div className='background-pot'>
+        <OtherHeader/>
 		<main>
-            <OtherHeader/>
-			<h1>Edit Recipe</h1>
+			<h1 className='header'>Edit Recipe</h1>
 			<form onSubmit={handleSubmit}>
-            <div className="form-group">
+            <div className="form-group editName">
                 <label htmlFor="name">Recipe Name</label>
                 <input
                     required
@@ -55,16 +58,17 @@ function EditRecipeForm() {
                     name='name'
                 />
             </div>
-            <div className='form-group'>
+            <div className='form-group editIngredients'>
                 <label htmlFor='ingredients'>Ingredients</label>
                 <input
                     value={recipe.ingredientList}
                     onChange={e => setRecipe({...recipe, ingredientList: e.target.value})}
+                    className='form-control'
                     id='ingredientList'
                     name='ingredientList'
                 />
             </div>
-            <div className='form-group'>
+            <div className='form-group editCookTime'>
                 <label htmlFor='cook-time'>Cook Time</label>
                 <input
                     type='number'
@@ -77,18 +81,20 @@ function EditRecipeForm() {
                     name='cookTime'
                 />
             </div>
-            <div className='form-group'>
+            <div className='form-group editInstructions'>
                 <label htmlFor='instructions'>Instructions</label>
                 <input
                     value={recipe.instructions}
                     onChange={e => setRecipe({...recipe, instructions: e.target.value})}
+                    className='form-control'
                     id='instructions'
                     name='instructions'
                 />
             </div>
-				<input className="btn btn-primary" type="submit" value="Save" />
+				<button className="save" type="submit" > <VscSaveAs /> </button>
 			</form>
 		</main>
+        </div>
 	)
 }
 

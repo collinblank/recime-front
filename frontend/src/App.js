@@ -6,11 +6,13 @@ import NewRecipeForm from './components/Details/NewRecipeForm';
 import LoginForm from './components/Users/LoginForm';
 import SignUpForm from './components/Users/SignupForm';
 import EditRecipeForm from './components/Details/EditRecipeForm';
+import CurrentUserProvider from './components/Users/CurrentUser';
 import './App.css'
 
 function App() {
 
   return (
+      <CurrentUserProvider>
       <BrowserRouter>
         <Routes>
           <Route exact path='/' element={<HomePage/>}/>
@@ -21,6 +23,7 @@ function App() {
           <Route exact path='/recipes/:recipeId/edit' element={<EditRecipeForm />} />      
         </Routes>
       </BrowserRouter>
+      </CurrentUserProvider>
  
   );
 }

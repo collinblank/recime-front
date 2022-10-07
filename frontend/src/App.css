@@ -15,3 +15,10 @@
   border-bottom: 2px solid var(--gold);
   font-family: var(--font);
 }
+
+.recipe-background{
+  background-image: url(../blob/Recipe-outline.png);
+  background-repeat: repeat;
+  height: 100%;
+  width: 100vw;
+}

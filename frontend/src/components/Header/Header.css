@@ -9,4 +9,14 @@
 }
 
 /* Header recime */
-
+.header-recime{
+  border: 1px solid var(--gold);
+  border-radius: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: table;
+  margin: 0 auto;
+  font-family: var(--font);
+  background-color: var(--background);
+  margin-top: 1em;
+}
