@@ -37,7 +37,7 @@ export default function RecipeCard(props) {
                             <CardContent>
                                 <CardMedia
                                     component="img"
-                                    image="https://cdn-icons-png.flaticon.com/512/57/57990.png"
+                                    image="http://cdn-icons-png.flaticon.com/512/57/57990.png"
                                     alt="cartoon pot"
                                 />
                                 <Typography className="recipe-card-name">

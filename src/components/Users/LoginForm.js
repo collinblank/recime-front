@@ -19,7 +19,7 @@ function LoginForm() {
      
 async function handleSubmit(e) {
     e.preventDefault()
-    const response = await fetch(`https://recime-backend.herokuapp.com/authentication`, {
+    const response = await fetch(`http://recime-backend.herokuapp.com/authentication`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

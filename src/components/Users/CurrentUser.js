@@ -10,7 +10,7 @@ function CurrentUserProvider({ children }) {
     useEffect(() => {
 
         const getLoggedInUser = async () => {
-            let response = await fetch('https://recime-backend.herokuapp.com/authentication/profile', {
+            let response = await fetch('http://recime-backend.herokuapp.com/authentication/profile', {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`
                 }

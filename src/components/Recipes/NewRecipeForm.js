@@ -16,7 +16,7 @@ function NewRecipesForm() {
 async function handleSubmit(e) {
     e.preventDefault()
     
-    await fetch(`https://recime-backend.herokuapp.com/recipes`, {
+    await fetch(`http://recime-backend.herokuapp.com/recipes`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
