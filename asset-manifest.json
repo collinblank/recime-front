@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/recime-front/static/css/main.fb851340.css",
+    "main.js": "/recime-front/static/js/main.a9e20e7b.js",
+    "static/media/Pot-outline.png": "/recime-front/static/media/Pot-outline.e8db966d6824bf847518.png",
+    "index.html": "/recime-front/index.html",
+    "main.fb851340.css.map": "/recime-front/static/css/main.fb851340.css.map",
+    "main.a9e20e7b.js.map": "/recime-front/static/js/main.a9e20e7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb851340.css",
+    "static/js/main.a9e20e7b.js"
+  ]
+}
