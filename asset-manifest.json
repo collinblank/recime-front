@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/recime-front/static/css/main.45e41a2d.css",
-    "main.js": "/recime-front/static/js/main.593adf50.js",
+    "main.css": "/recime-front/static/css/main.8a63754f.css",
+    "main.js": "/recime-front/static/js/main.fea511fe.js",
     "static/media/Pot-outline-gold-lg.png": "/recime-front/static/media/Pot-outline-gold-lg.c5411ea2a28b6341cbd1.png",
     "static/media/Pot-outline-black-lg.png": "/recime-front/static/media/Pot-outline-black-lg.e2633e7cd45b8a5a32fe.png",
     "static/media/Spatula-outline-gold-lg.png": "/recime-front/static/media/Spatula-outline-gold-lg.6e38d6c8fb7e85a9ea97.png",
@@ -10,11 +10,11 @@
     "static/media/Spatula-outline-gold.png": "/recime-front/static/media/Spatula-outline-gold.6bdd7b245bd2721f457a.png",
     "static/media/Spatula-outline.png": "/recime-front/static/media/Spatula-outline.89b29b5f3cd725c3aff5.png",
     "index.html": "/recime-front/index.html",
-    "main.45e41a2d.css.map": "/recime-front/static/css/main.45e41a2d.css.map",
-    "main.593adf50.js.map": "/recime-front/static/js/main.593adf50.js.map"
+    "main.8a63754f.css.map": "/recime-front/static/css/main.8a63754f.css.map",
+    "main.fea511fe.js.map": "/recime-front/static/js/main.fea511fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.45e41a2d.css",
-    "static/js/main.593adf50.js"
+    "static/css/main.8a63754f.css",
+    "static/js/main.fea511fe.js"
   ]
 }
