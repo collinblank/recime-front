@@ -58,5 +58,6 @@
   },
   "devDependencies": {
     "webpack-cli": "^4.10.0"
-  }
+  },
+    "type": "module"
 }
