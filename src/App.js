@@ -15,7 +15,7 @@ function App() {
       <CurrentUserProvider>
       <BrowserRouter>
         <Routes>
-          <Route exact path='/' element={<HomePage/>}/>
+          <Route exact path='/recime-front' element={<HomePage/>}/>
           <Route exact path='/sign-up' element={<SignUpForm />} />
           <Route exact path='/login' element={<LoginForm />} />
           <Route exact path='/recipes/:recipeId' element={<ViewRecipe />} />
