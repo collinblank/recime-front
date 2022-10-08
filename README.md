@@ -90,8 +90,8 @@ FAF5E6 - background
   cookTime: 0,
   instructions: ""
 
-![Recime_Outline](./frontend/blob/Recime_Outline.png)
-![Database_toStart](./frontend/blob/Database_tostart.png)
+![Recime_Outline](./blob/Recime_Outline.png)
+![Database_toStart](./blob/blob/Database_tostart.png)
 
 # Recime in the Future:
 #### Future Adds:
