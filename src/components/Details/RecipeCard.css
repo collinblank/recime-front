@@ -31,3 +31,14 @@
     color: var(--gold);
     text-align: center;
   }
+
+  .loading{
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    margin-top: 8em;
+    background-color: var(--background);
+    border: 1px solid var(--red);
+    border-radius: 1em;
+    padding: 1em;
+  }

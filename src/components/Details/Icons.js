@@ -18,8 +18,8 @@ export default function Icons(props) {
         
         useEffect(() => changeIcon(), [])
 
-        // return(
-        //     <Icons source = {icons[currentIconIndex]} />
-        // )
+        return(
+            {currentIconIndex}
+        )
 
 }
