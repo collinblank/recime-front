@@ -1,6 +1,7 @@
 {
   "name": "recime-front",
   "version": "0.1.0",
+  "homepage": "https://collinblank.github.io/recime-front",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -15,10 +16,10 @@
     "styled-components": "^5.3.6"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,8 +39,7 @@
       "last 1 safari version"
     ]
   },
-  "engine": {
-    "node": "18.8.0",
-    "npm": "8.19.2"
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
