@@ -8,11 +8,11 @@ This should be viewed more as a minimum Viable Product here right now.  There ar
 My wife always wants a recipe app because we store screenshots of all of our recipes on our phones.  This is actually a complaint you'll hear really often in our house.  So my hope was that this recipe app would be able to have a place to upload your image of a recipe and it's stored right inside the view with the name and any other information you feel like adding.  Unfortunately I just ran out of time to add that feature so it's simply stopped as a place to store information about recipes with a lot of future innovation hopefully coming. 
 
 ### Deployed front end:
-![Frontend Deployed](https://collinblank.github.io/recime-front/)
+[Frontend Deployed](https://collinblank.github.io/recime-front/)
 
 ### Link to backend repo and deployed backend:
-![Backend Repo](https://github.com/collinblank/recime-back)
-![Backend Deployed](https://recime-backend.herokuapp.com/)
+[Backend Repo](https://github.com/collinblank/recime-back)
+[Backend Deployed](https://recime-backend.herokuapp.com/)
 
 #### Dependencies Used
  "@emotion/react": "^11.10.4",
@@ -27,8 +27,8 @@ My wife always wants a recipe app because we store screenshots of all of our rec
   "styled-components": "^5.3.6"
 
   ##### Styled Components
-  "Utilising tagged template literals (a recent addition to JavaScript) and the power of CSS, styled-components allows you to write actual CSS code to style your components."  Allowed me to have styled components and made building the burger menu easier.  Included my ternary operator within my styled component to control the button and it's movement of the burger menu. ![Styled-Components](https://styled-components.com/docs/basics)
-    * included in style components I used Theme Provider.  It's a wrapper that uses the Context API and made the theme variables available to the whole component tree.  We don't have a need to use props so if you look at a file like global.js you'll see "${({ theme })" instead of "props.theme".  The theme is available because I'm using theme provider. Variables are set in the theme.js file.  ![Theming](https://styled-components.com/docs/advanced)
+  "Utilising tagged template literals (a recent addition to JavaScript) and the power of CSS, styled-components allows you to write actual CSS code to style your components."  Allowed me to have styled components and made building the burger menu easier.  Included my ternary operator within my styled component to control the button and it's movement of the burger menu. [Styled-Components](https://styled-components.com/docs/basics)
+    * included in style components I used Theme Provider.  It's a wrapper that uses the Context API and made the theme variables available to the whole component tree.  We don't have a need to use props so if you look at a file like global.js you'll see "${({ theme })" instead of "props.theme".  The theme is available because I'm using theme provider. Variables are set in the theme.js file.  [Theming](https://styled-components.com/docs/advanced)
   
   ##### Material UI:
   Material UI allowed me to do some really cool styling and apply it to all of my recipes.  Turning each one into cards and creating a grid out of them.  It also included the ability to make the whole card a button really easily. 
