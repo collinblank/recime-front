@@ -36,7 +36,7 @@ My wife always wants a recipe app because we store screenshots of all of our rec
   ### Coolest Feature:
   The burger menu I liked a lot.  I added an onClick handler to the component and it calls the setOpen function and toggles the open prop.  I passed the open prop to my menu option as well and used the Menu.styled.js to send the open prop and cause a transformation. Also used open prop to change the burger menu icon color in burger.js and change the divs view. Making the burger go from open to close. 
 
-  The coolest part is closing the menu by clicking outside of it. Had to do some research on this but I Set up a useonclickoutside function that uses useEffect and a ref that checks the clicked element.  I pass node and the function closing the menu as a second argument.  And then I pass node on the div taht wraps my burger and menu so that it understands those two items, when clicked, the menu remains open.  When anything else is clicked the menu closes. 
+  The coolest part is closing the menu by clicking outside of it. Had to do some research on this but I Set up a useonclickoutside function that uses useEffect and a ref that checks the clicked element.  I pass node and the function closing the menu as a second argument.  And then I pass node on the div that wraps my burger and menu so that it understands those two items, when clicked, the menu remains open.  When anything else is clicked the menu closes. 
 
 # Planning Stages: 
 
@@ -104,4 +104,5 @@ FAF5E6 - background
     * Add categories page.
     * Add recipe publisher to recipe database so that users view is specific to themselves.
     * Ability to log out.
+    * Search Bar.
     * Can't decide if a back button would be good.  Home link is always two clicks away. 
