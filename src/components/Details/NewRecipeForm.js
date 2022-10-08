@@ -20,7 +20,7 @@ function NewRecipeForm() {
             body: JSON.stringify(recipe)
 
         })
-        navigate('/')
+        navigate('/recime-front')
     }
 
 

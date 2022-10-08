@@ -18,7 +18,7 @@ main{
     font-family: var(--font);
     background-color: var(--background);
 }
-
+@media only screen and (min-width:601px) {
 form{
     border: 1px solid var(--red);
     border-radius: 1em;
@@ -27,6 +27,7 @@ form{
     font-family: var(--font);
     background-color: var(--background);
     margin: 1em;
+}
 }
 
 .editName{
@@ -59,4 +60,14 @@ form{
 
 input[type=number]::-webkit-inner-spin-button {
     opacity: 1;
+  }
+
+  @media only screen and (max-width:600px) {
+  .background-pot{
+    background-image: url(../../../blob/Pot-outline-black-lg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
   }

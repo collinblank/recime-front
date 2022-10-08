@@ -1,6 +1,8 @@
 import { useContext, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { CurrentUser } from './CurrentUser'
+import OtherHeader from "../Header/OtherHeader"
+import {IoLogInOutline} from 'react-icons/io5'
 import './LoginForm.css'
 
 function LoginForm() {
@@ -33,14 +35,16 @@ async function handleSubmit(e) {
     setCurrentUser(data.user)
     console.log(data.user)
     localStorage.setItem('token', data.token)
-    navigate('/')
+    navigate('/recime-front')
    } else {
         setErrorMessage(data.message)
    }
 }
 return (
+    <div className="background-spatula">
+        <OtherHeader/>
     <main>
-        <h1>Login</h1>
+        <h1 className='header'>Login</h1>
         {errorMessage !== null
             ? (
                 <div className="alert alert-danger" role="alert">
@@ -51,7 +55,7 @@ return (
         }
         <form onSubmit={handleSubmit}>
             <div className="row">
-                <div className="col-sm-6 form-group">
+                <div className="col-sm-6 form-group login-email">
                     <label htmlFor="email">Email</label>
                     <input
                         type="email"
@@ -63,7 +67,7 @@ return (
                         name="email"
                     />
                 </div>
-                <div className="col-sm-6 form-group">
+                <div className="col-sm-6 form-group login-password">
                     <label htmlFor="password">Password</label>
                     <input
                         type="password"
@@ -76,9 +80,10 @@ return (
                     />
                 </div>
             </div>
-            <input className="btn btn-primary" type="submit" value="Login" />
+            <button className="login" type="submit" > <IoLogInOutline/> </button>
         </form>
     </main>
+    </div>
 )
 }
 

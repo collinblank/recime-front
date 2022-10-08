@@ -1,5 +1,5 @@
-.background-spatula{
-    background-image: url(../../../blob/Spatula-outline.png);
+.background-spatula-gold{
+    background-image: url(../../../blob/Spatula-outline-gold.png);
     height: 100vw;
     background-repeat: repeat;
 }
@@ -19,32 +19,39 @@ main{
     background-color: var(--background);
 }
 @media only screen and (min-width:601px) {
-    form{
-        border: 1px solid var(--red);
-        border-radius: 1em;
-        padding-left: 1em;
-        padding-right: 1em;
-        font-family: var(--font);
-        background-color: var(--background);
-        margin: 1em;
-    }
-    }
 
-.login-email{
-    width: 50.5%;
-    display: table;
-    margin: 0 auto;
+form{
+    border: 1px solid var(--red);
+    border-radius: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: var(--font);
+    background-color: var(--background);
+    margin: 1em;
+}
+}
+
+.sign-up-name{
+    margin-bottom: 1em;
     margin-top: 1em;
 }
 
-.login-password{
-    width: 50.5%;
-    display: table;
-    margin: 0 auto;
+.sign-up-last-name{
+    margin-bottom: 1em;
     margin-top: 1em;
 }
 
-.login{
+.sign-up-email{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.sign-up-password{
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.signup{
     display: table;
     margin: 0 auto;
     background-color: var(--gold);
@@ -56,27 +63,23 @@ main{
     margin-bottom: 1em;
     margin-top: 1em;
 }
+
 @media only screen and (max-width:600px)   {
 
-.background-spatula{
-    background-image: url(../../../blob/Pot-outline-black-lg.png);
+   form{
+    border: 1px solid var(--red);
+    border-radius: 1em;
+    font-family: var(--font);
+    background-color: var(--background);
+    margin-top: 1em;
+    width: 100%;
+   }
+
+   .background-spatula-gold{
+    background-image: url(../../../blob/Spatula-outline-gold-lg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
-}
-
-.login-email{
-    width: 90%;
-    display: table;
-    margin: 0 auto;
-    margin-top: 1em;
-}
-
-.login-password{
-    width: 90%;
-    display: table;
-    margin: 0 auto;
-    margin-top: 1em;
 }
 }

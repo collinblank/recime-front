@@ -10,7 +10,7 @@ const Menu = ({ open }) => {
         <span role="img" aria-label="add recipe"></span>
         Add Recipe
       </Link>
-      <Link to={`/`}>
+      <Link to={`/recime-front`}>
         <span role="img" aria-label="home"></span>
         Home
         </Link>

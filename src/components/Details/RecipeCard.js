@@ -4,11 +4,11 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import './RecipeCard.css'
 
-
+const myPix = new Array("https://static.vecteezy.com/system/resources/previews/004/223/701/non_2x/dry-measuring-cup-icon-doodle-hand-drawn-or-outline-icon-style-free-vector.jpg", "https://cdn-icons-png.flaticon.com/512/57/57990.png");
+const randomNum = Math.floor(Math.random() * myPix.length);
 
 export default function RecipeCard(props) { 
 
@@ -25,21 +25,20 @@ export default function RecipeCard(props) {
                 alignItems="flex-start">
                 {
                 recipes.map((recipe, index) => (
-                    <Grid item xs={4}>
+                    <Grid item xs={6}>
                         <Card className='recipe-card' key={recipe.recipeId} style={{backgroundColor: "var(--red)"}}>
-                            <Link to={`/recipes/${recipe.recipeId}`}>
+                            <Link to={`/recipes/${recipe.recipeId}`} style={{ textDecoration: 'none' }}>
                             <CardActionArea> 
                             <CardContent>
                                 <CardMedia
                                     component="img"
-                                    image="https://cdn-icons-png.flaticon.com/512/57/57990.png"
+                                    image={myPix[randomNum]}
                                     alt="cartoon pot"
                                 />
-                                <Typography className="recipe-card-name">
+                                <h6 className="recipe-card-name">
                                   {recipe.name}
-                                </Typography>
+                                </h6>
                             </CardContent>
-                            
                             </CardActionArea>
                             </Link>
                         </Card>

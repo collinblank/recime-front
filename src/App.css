@@ -17,8 +17,18 @@
 }
 
 .recipe-background{
-  background-image: url(../blob/Recipe-outline.png);
+  background-image: url(../blob/Pot-outline-gold.png);
   background-repeat: repeat;
   height: 100%;
   width: 100vw;
+}
+
+@media only screen and (max-width:600px)   {
+  .recipe-background{
+    background-image: url(../blob/Pot-outline-gold-lg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
 }

@@ -1,5 +1,8 @@
 import { useState } from "react"
 import { useNavigate } from "react-router"
+import OtherHeader from "../Header/OtherHeader"
+import {HiOutlinePencilAlt} from 'react-icons/hi'
+import './SignupForm.css'
 
 function SignUpForm() {
 
@@ -23,15 +26,17 @@ function SignUpForm() {
 			body: JSON.stringify(user)
 		})
 
-		navigate(`/`)
+		navigate(`/recime-front`)
 	}
 
 	return (
+		<div className='background-spatula-gold'>
+			<OtherHeader />
 		<main>
-			<h1>Sign Up</h1>
+			<h1 className='header'>Sign Up</h1>
 			<form onSubmit={handleSubmit}>
 				<div className="row">
-					<div className="col-sm-6 form-group">
+					<div className="col-sm-6 form-group sign-up-name">
 						<label htmlFor="firstName">First Name</label>
 						<input
 							required
@@ -42,7 +47,7 @@ function SignUpForm() {
 							name="firstName"
 						/>
 					</div>
-					<div className="col-sm-6 form-group">
+					<div className="col-sm-6 form-group sign-up-last-name">
 						<label htmlFor="lastName">Last Name</label>
 						<input
 							required
@@ -55,7 +60,7 @@ function SignUpForm() {
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-sm-6 form-group">
+					<div className="col-sm-6 form-group sign-up-email">
 						<label htmlFor="email">Email</label>
 						<input
 							type="email"
@@ -67,7 +72,7 @@ function SignUpForm() {
 							name="email"
 						/>
 					</div>
-					<div className="col-sm-6 form-group">
+					<div className="col-sm-6 form-group sign-up-password">
 						<label htmlFor="password">Password</label>
 						<input
 							type='password'
@@ -80,9 +85,10 @@ function SignUpForm() {
 						/>
 					</div>
 				</div>
-				<input className="btn btn-primary" type="submit" value="Sign Up" />
+				<button className="signup" type="submit"> <HiOutlinePencilAlt/></button>
 			</form>
 		</main>
+		</div>
 	)
 }
 

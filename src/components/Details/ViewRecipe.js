@@ -32,7 +32,7 @@ function ViewRecipe() {
         await fetch(`https://recime-backend.herokuapp.com/recipes/${recipeId}`,{
             method: 'DELETE'
     })
-    navigate('/')
+    navigate('/recime-front')
     };
 
 return (
