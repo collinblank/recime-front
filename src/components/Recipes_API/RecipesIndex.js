@@ -4,8 +4,6 @@ import RecipeCard from "../Details/RecipeCard";
 
 export default function RecipesIndex() {
 
-const RECIPES_URL = "https://recime-backend.herokuapp.com/recipes";
-
 const [recipes, getRecipes] = useState({});
 
 useEffect(() => {

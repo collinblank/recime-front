@@ -42,7 +42,7 @@ return (
     <main>
     <div className='view-recipe'>
         <h1 className='recipe-name'>{recipe.name}</h1>
-        <span className='time-image'><span className='time-hours'><p className='cookTime'>{recipe.cookTime}</p> <span className='hours'>Hour(s)</span></span> <img className='cooking-image' src='https://cdn-icons-png.flaticon.com/512/57/57990.png' alt='cooking-image'></img></span>
+        <span className='time-image'><span className='time-hours'><p className='cookTime'>{recipe.cookTime}</p> <span className='hours'>Hour(s)</span></span> <img className='cooking-image' src='https://cdn-icons-png.flaticon.com/512/57/57990.png' alt='cooking'></img></span>
         <div className='ingredients-block'><h2 className='ingredients-header'>Ingredients List</h2>
         <p className="ingredient-list">{recipe.ingredientList}</p></div>
         <div className='instructions-block'>

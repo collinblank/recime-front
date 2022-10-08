@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -7,18 +6,14 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import ViewRecipe from './ViewRecipe'
-import Icons from './Icons';
 import './RecipeCard.css'
 
 
 
 export default function RecipeCard(props) { 
 
-    const { recipeId } = useParams();
-
     const displayRecipes = (props) => {
-        const {menu, recipes} = props;
+        const {recipes} = props;
 
         if (recipes.length > 0) {
             return(
