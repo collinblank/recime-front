@@ -33,6 +33,7 @@ The backend of my app is on Heroku.  I used Heroku Postgres add on to deploy it 
 
   ##### Styled Components
   "Utilising tagged template literals (a recent addition to JavaScript) and the power of CSS, styled-components allows you to write actual CSS code to style your components."  Allowed me to have styled components and made building the burger menu easier.  Included my ternary operator within my styled component to control the button and it's movement of the burger menu. [Styled-Components](https://styled-components.com/docs/basics)
+  
     * included in style components I used Theme Provider.  It's a wrapper that uses the Context API and made the theme variables available to the whole component tree.  We don't have a need to use props so if you look at a file like global.js you'll see "${({ theme })" instead of "props.theme".  The theme is available because I'm using theme provider. Variables are set in the theme.js file.  [Theming](https://styled-components.com/docs/advanced)
   
   ##### Material UI:
