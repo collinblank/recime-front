@@ -91,7 +91,7 @@ FAF5E6 - background
   instructions: ""
 
 ![Recime_Outline](./blob/Recime_Outline.png)
-![Database_toStart](./blob/blob/Database_tostart.png)
+![Database_toStart](./blob/Database_tostart.png)
 
 # Recime in the Future:
 #### Future Adds:
