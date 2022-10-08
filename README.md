@@ -8,9 +8,13 @@ This should be viewed more as a minimum Viable Product here right now.  There ar
 My wife always wants a recipe app because we store screenshots of all of our recipes on our phones.  This is actually a complaint you'll hear really often in our house.  So my hope was that this recipe app would be able to have a place to upload your image of a recipe and it's stored right inside the view with the name and any other information you feel like adding.  Unfortunately I just ran out of time to add that feature so it's simply stopped as a place to store information about recipes with a lot of future innovation hopefully coming. 
 
 ### Deployed front end:
+The front of my application is deployed using github Pages.  It worked really well.  Heroku had a ton of problems when I tried and AWS gave me issues in the last class.
+
 [Frontend Deployed](https://collinblank.github.io/recime-front/)
 
 ### Link to backend repo and deployed backend:
+The backend of my app is on Heroku.  I used Heroku Postgres add on to deploy it and access it.  
+
 [Backend Repo](https://github.com/collinblank/recime-back)
 [Backend Deployed](https://recime-backend.herokuapp.com/)
 
