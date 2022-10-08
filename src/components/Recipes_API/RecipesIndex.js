@@ -4,7 +4,7 @@ import RecipeCard from "../Details/RecipeCard";
 
 export default function RecipesIndex() {
 
-const RECIPES_URL = "http://recime-backend.herokuapp.com/recipes";
+const RECIPES_URL = "https://recime-backend.herokuapp.com/recipes";
 
 const [recipes, getRecipes] = useState({});
 
@@ -13,7 +13,7 @@ useEffect(() => {
     }, []);
 
 const getAllRecipes = () => {
-axios.get('http://recime-backend.herokuapp.com/recipes')
+axios.get('https://recime-backend.herokuapp.com/recipes')
 .then((response) =>{
   const allRecipes = response.data;
   getRecipes(allRecipes)

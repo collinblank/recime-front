@@ -15,7 +15,7 @@ function SignUpForm() {
 	async function handleSubmit(e) {
 		e.preventDefault()
 
-		await fetch(`http://recime-backend.herokuapp.com/users`, {
+		await fetch(`https://recime-backend.herokuapp.com/users`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

@@ -13,7 +13,7 @@ function ViewRecipe() {
 
     useEffect(() => {
         const fetchRecipe = async () => {
-            const response = await fetch(`http://recime-backend.herokuapp.com/recipes/${recipeId}`)
+            const response = await fetch(`https://recime-backend.herokuapp.com/recipes/${recipeId}`)
             const resData = await response.json()
             setRecipe(resData)
         }
@@ -29,7 +29,7 @@ function ViewRecipe() {
 	}
 
     async function deleteRecipe() {
-        await fetch(`http://recime-backend.herokuapp.com/recipes/${recipeId}`,{
+        await fetch(`https://recime-backend.herokuapp.com/recipes/${recipeId}`,{
             method: 'DELETE'
     })
     navigate('/')
