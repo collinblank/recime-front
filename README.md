@@ -103,3 +103,5 @@ FAF5E6 - background
     * Updates to database. 
     * Add categories page.
     * Add recipe publisher to recipe database so that users view is specific to themselves.
+    * Ability to log out.
+    * Can't decide if a back button would be good.  Home link is always two clicks away. 
